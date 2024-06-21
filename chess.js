@@ -308,12 +308,12 @@
         if(!j&&!q) {
             n.turn=3-n.turn
             if(gen_moves(n)) a=0
-            a=n.next-root-1e4
+            a=n.next-root-1e6
         }
         return a
     }
 
-    function pick_move(n,d,a=-1e4,b=-a,bm=0,i=256,s,nn,m=n.ml) {
+    function pick_move(n,d,a=-1e6,b=-a,bm=0,i=256,s,nn,m=n.ml) {
         nodes_count=0
         root=n.next-1
         init_pst(n)
